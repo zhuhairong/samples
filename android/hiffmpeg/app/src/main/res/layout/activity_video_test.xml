@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoTestActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/btJavaEncode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="javaencode"
+            />
+
+        <Button
+            android:id="@+id/btJavaDecode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="javadecode"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/btNativeEncode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="natvieencode"
+            />
+
+        <Button
+            android:id="@+id/btNativeDecode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="natviedecode"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        >
+        <Switch
+            android:id="@+id/swHardware"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="hw"
+            />
+
+        <Switch
+            android:id="@+id/swMultThread"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:checked="false"
+            android:text="mt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/btFfEncode"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="ffencode"
+            />
+
+        <Button
+            android:id="@+id/btFfDecode"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="ffdecode"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"
+        />
+</LinearLayout>

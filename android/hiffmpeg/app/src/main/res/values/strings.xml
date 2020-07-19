@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">hiffmpeg</string>
+    <string name="permission_tip">"没有允许需要的权限"</string>
+</resources>

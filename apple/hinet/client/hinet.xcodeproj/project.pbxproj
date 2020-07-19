@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5737330526E6F5C000853314 /* http_request.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5737330326E6F5C000853314 /* http_request.mm */; };
+		5737330826E6F6A900853314 /* https_request.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5737330626E6F6A900853314 /* https_request.mm */; };
+		5737330B26E6FDE100853314 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5737330A26E6FDE100853314 /* WebKit.framework */; };
+		579979B226D40D0B00B2B07B /* http_mgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 579979B026D40D0B00B2B07B /* http_mgr.mm */; };
+		57D5532426D1F4C000BCDAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5532326D1F4C000BCDAF1 /* AppDelegate.m */; };
+		57D5532726D1F4C000BCDAF1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5532626D1F4C000BCDAF1 /* SceneDelegate.m */; };
+		57D5532A26D1F4C000BCDAF1 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57D5532926D1F4C000BCDAF1 /* ViewController.mm */; };
+		57D5532D26D1F4C000BCDAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5532B26D1F4C000BCDAF1 /* Main.storyboard */; };
+		57D5532F26D1F4C100BCDAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D5532E26D1F4C100BCDAF1 /* Assets.xcassets */; };
+		57D5533226D1F4C100BCDAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5533026D1F4C100BCDAF1 /* LaunchScreen.storyboard */; };
+		57D5533526D1F4C100BCDAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5533426D1F4C100BCDAF1 /* main.m */; };
+		57D5539826D23A1D00BCDAF1 /* sources in Resources */ = {isa = PBXBuildFile; fileRef = 57D5539726D23A1D00BCDAF1 /* sources */; };
+		57D5539D26D23AED00BCDAF1 /* test_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57D5539A26D23AED00BCDAF1 /* test_http.cpp */; };
+		57D553AE26D2471300BCDAF1 /* test_http2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57D553AC26D2471300BCDAF1 /* test_http2.cpp */; };
+		57E18BA226E7CEB3004440A2 /* http_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57E18BA026E7CEB3004440A2 /* http_test.cpp */; };
+		57E18BA526E7D225004440A2 /* https_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57E18BA326E7D225004440A2 /* https_test.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5737330326E6F5C000853314 /* http_request.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = http_request.mm; sourceTree = "<group>"; };
+		5737330426E6F5C000853314 /* http_request.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_request.hpp; sourceTree = "<group>"; };
+		5737330626E6F6A900853314 /* https_request.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = https_request.mm; sourceTree = "<group>"; };
+		5737330726E6F6A900853314 /* https_request.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = https_request.hpp; sourceTree = "<group>"; };
+		5737330A26E6FDE100853314 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/iOSSupport/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		579979B026D40D0B00B2B07B /* http_mgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = http_mgr.mm; sourceTree = "<group>"; };
+		579979B126D40D0B00B2B07B /* http_mgr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_mgr.hpp; sourceTree = "<group>"; };
+		57D5531F26D1F4C000BCDAF1 /* hinet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hinet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D5532226D1F4C000BCDAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57D5532326D1F4C000BCDAF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57D5532526D1F4C000BCDAF1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		57D5532626D1F4C000BCDAF1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		57D5532826D1F4C000BCDAF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		57D5532926D1F4C000BCDAF1 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		57D5532C26D1F4C000BCDAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57D5532E26D1F4C100BCDAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57D5533126D1F4C100BCDAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57D5533326D1F4C100BCDAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D5533426D1F4C100BCDAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57D5533B26D1F4CE00BCDAF1 /* hinet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hinet.entitlements; sourceTree = "<group>"; };
+		57D5539726D23A1D00BCDAF1 /* sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sources; sourceTree = "<group>"; };
+		57D5539A26D23AED00BCDAF1 /* test_http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_http.cpp; sourceTree = "<group>"; };
+		57D5539B26D23AED00BCDAF1 /* httplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httplib.h; sourceTree = "<group>"; };
+		57D5539C26D23AED00BCDAF1 /* test_http.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_http.hpp; sourceTree = "<group>"; };
+		57D553AB26D242EC00BCDAF1 /* certificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = certificate.h; sourceTree = "<group>"; };
+		57D553AC26D2471300BCDAF1 /* test_http2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_http2.cpp; sourceTree = "<group>"; };
+		57D553AD26D2471300BCDAF1 /* test_http2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test_http2.hpp; sourceTree = "<group>"; };
+		57E18BA026E7CEB3004440A2 /* http_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = http_test.cpp; sourceTree = "<group>"; };
+		57E18BA126E7CEB3004440A2 /* http_test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_test.hpp; sourceTree = "<group>"; };
+		57E18BA326E7D225004440A2 /* https_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = https_test.cpp; sourceTree = "<group>"; };
+		57E18BA426E7D225004440A2 /* https_test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = https_test.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D5531C26D1F4C000BCDAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5737330B26E6FDE100853314 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5737330926E6FDE100853314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5737330A26E6FDE100853314 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57D5531626D1F4C000BCDAF1 = {
+			isa = PBXGroup;
+			children = (
+				57D5532126D1F4C000BCDAF1 /* hinet */,
+				57D5532026D1F4C000BCDAF1 /* Products */,
+				5737330926E6FDE100853314 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57D5532026D1F4C000BCDAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D5531F26D1F4C000BCDAF1 /* hinet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57D5532126D1F4C000BCDAF1 /* hinet */ = {
+			isa = PBXGroup;
+			children = (
+				57D5539926D23A6800BCDAF1 /* tmp */,
+				57D5539726D23A1D00BCDAF1 /* sources */,
+				57D5533F26D203D100BCDAF1 /* http */,
+				57D5533B26D1F4CE00BCDAF1 /* hinet.entitlements */,
+				57D5532226D1F4C000BCDAF1 /* AppDelegate.h */,
+				57D5532326D1F4C000BCDAF1 /* AppDelegate.m */,
+				57D5532526D1F4C000BCDAF1 /* SceneDelegate.h */,
+				57D5532626D1F4C000BCDAF1 /* SceneDelegate.m */,
+				57D5532826D1F4C000BCDAF1 /* ViewController.h */,
+				57D5532926D1F4C000BCDAF1 /* ViewController.mm */,
+				57D5532B26D1F4C000BCDAF1 /* Main.storyboard */,
+				57D5532E26D1F4C100BCDAF1 /* Assets.xcassets */,
+				57D5533026D1F4C100BCDAF1 /* LaunchScreen.storyboard */,
+				57D5533326D1F4C100BCDAF1 /* Info.plist */,
+				57D5533426D1F4C100BCDAF1 /* main.m */,
+			);
+			path = hinet;
+			sourceTree = "<group>";
+		};
+		57D5533F26D203D100BCDAF1 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				579979B026D40D0B00B2B07B /* http_mgr.mm */,
+				579979B126D40D0B00B2B07B /* http_mgr.hpp */,
+				5737330326E6F5C000853314 /* http_request.mm */,
+				5737330426E6F5C000853314 /* http_request.hpp */,
+				5737330626E6F6A900853314 /* https_request.mm */,
+				5737330726E6F6A900853314 /* https_request.hpp */,
+				57E18BA026E7CEB3004440A2 /* http_test.cpp */,
+				57E18BA126E7CEB3004440A2 /* http_test.hpp */,
+				57E18BA326E7D225004440A2 /* https_test.cpp */,
+				57E18BA426E7D225004440A2 /* https_test.hpp */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		57D5539926D23A6800BCDAF1 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				57D553AC26D2471300BCDAF1 /* test_http2.cpp */,
+				57D553AD26D2471300BCDAF1 /* test_http2.hpp */,
+				57D553AB26D242EC00BCDAF1 /* certificate.h */,
+				57D5539B26D23AED00BCDAF1 /* httplib.h */,
+				57D5539A26D23AED00BCDAF1 /* test_http.cpp */,
+				57D5539C26D23AED00BCDAF1 /* test_http.hpp */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57D5531E26D1F4C000BCDAF1 /* hinet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D5533826D1F4C100BCDAF1 /* Build configuration list for PBXNativeTarget "hinet" */;
+			buildPhases = (
+				57D5531B26D1F4C000BCDAF1 /* Sources */,
+				57D5531C26D1F4C000BCDAF1 /* Frameworks */,
+				57D5531D26D1F4C000BCDAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hinet;
+			productName = hinet;
+			productReference = 57D5531F26D1F4C000BCDAF1 /* hinet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D5531726D1F4C000BCDAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					57D5531E26D1F4C000BCDAF1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 57D5531A26D1F4C000BCDAF1 /* Build configuration list for PBXProject "hinet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57D5531626D1F4C000BCDAF1;
+			productRefGroup = 57D5532026D1F4C000BCDAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D5531E26D1F4C000BCDAF1 /* hinet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57D5531D26D1F4C000BCDAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5533226D1F4C100BCDAF1 /* LaunchScreen.storyboard in Resources */,
+				57D5532F26D1F4C100BCDAF1 /* Assets.xcassets in Resources */,
+				57D5532D26D1F4C000BCDAF1 /* Main.storyboard in Resources */,
+				57D5539826D23A1D00BCDAF1 /* sources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D5531B26D1F4C000BCDAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D553AE26D2471300BCDAF1 /* test_http2.cpp in Sources */,
+				5737330526E6F5C000853314 /* http_request.mm in Sources */,
+				57D5532A26D1F4C000BCDAF1 /* ViewController.mm in Sources */,
+				579979B226D40D0B00B2B07B /* http_mgr.mm in Sources */,
+				57D5532426D1F4C000BCDAF1 /* AppDelegate.m in Sources */,
+				57D5539D26D23AED00BCDAF1 /* test_http.cpp in Sources */,
+				57E18BA526E7D225004440A2 /* https_test.cpp in Sources */,
+				57D5533526D1F4C100BCDAF1 /* main.m in Sources */,
+				57E18BA226E7CEB3004440A2 /* http_test.cpp in Sources */,
+				5737330826E6F6A900853314 /* https_request.mm in Sources */,
+				57D5532726D1F4C000BCDAF1 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57D5532B26D1F4C000BCDAF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D5532C26D1F4C000BCDAF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57D5533026D1F4C100BCDAF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D5533126D1F4C100BCDAF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57D5533626D1F4C100BCDAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57D5533726D1F4C100BCDAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57D5533926D1F4C100BCDAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = hinet/hinet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 823M6R4A85;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					CPPHTTPLIB_OPENSSL_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = "$(MY_DIR)";
+				INFOPLIST_FILE = hinet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCAL_LIB = "-ObjC -lz -lbz2 $(MY_LIB)";
+				MY_DIR = "$(PROJECT_DIR)/../3rd/include $(PROJECT_DIR)/../3rd/include/asio/include";
+				MY_LIB = "$(PROJECT_DIR)/../3rd/lib/libcrypto-universal.a $(PROJECT_DIR)/../3rd/lib/libssl-universal.a $(PROJECT_DIR)/../3rd/lib/libcurl-universal.a $(PROJECT_DIR)/../3rd/lib/libnghttp2-universal.a";
+				OTHER_LDFLAGS = "$(LOCAL_LIB)";
+				PRODUCT_BUNDLE_IDENTIFIER = hilive.hinet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57D5533A26D1F4C100BCDAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = hinet/hinet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 823M6R4A85;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				HEADER_SEARCH_PATHS = "$(MY_DIR)";
+				INFOPLIST_FILE = hinet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCAL_LIB = "-ObjC -lz -lbz2 $(MY_LIB)";
+				MY_DIR = "$(PROJECT_DIR)/../3rd/include $(PROJECT_DIR)/../3rd/include/asio/include";
+				MY_LIB = "$(PROJECT_DIR)/../3rd/lib/libcrypto-universal.a $(PROJECT_DIR)/../3rd/lib/libssl-universal.a $(PROJECT_DIR)/../3rd/lib/libcurl-universal.a $(PROJECT_DIR)/../3rd/lib/libnghttp2-universal.a";
+				OTHER_LDFLAGS = "$(LOCAL_LIB)";
+				PRODUCT_BUNDLE_IDENTIFIER = hilive.hinet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D5531A26D1F4C000BCDAF1 /* Build configuration list for PBXProject "hinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5533626D1F4C100BCDAF1 /* Debug */,
+				57D5533726D1F4C100BCDAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D5533826D1F4C100BCDAF1 /* Build configuration list for PBXNativeTarget "hinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5533926D1F4C100BCDAF1 /* Debug */,
+				57D5533A26D1F4C100BCDAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57D5531726D1F4C000BCDAF1 /* Project object */;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="solution">
+        <item>180 * 320</item>
+        <item>270 * 480</item>
+        <item>360 * 640</item>
+        <item>540 * 960</item>
+        <item>720 * 1280</item>
+    </string-array>
+    <string-array name="video_fps">
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <color name="colorTranslucent">#7013294B</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="meetingItemBtn">@color/meetingTextColorSecond</color>
+    <color name="meetingTextColorDisable">#56749E</color>
+    <color name="meetingTextColorHint">#6B82A8</color>
+    <color name="meetingTextColorSecond">#EBF4FF</color>
+    <color name="tabColorNormal">@color/meetingTextColorDisable</color>
+    <color name="tabColorSelected">@color/meetingTextColorSecond</color>
+    <dimen name="meetingItemTitleSize">16sp</dimen>
+    <string name="enter_fomat">进入 %s 会议</string>
+    <string name="enter_tag_normal">进入会议</string>
+    <string name="meeting_rb_music">音乐</string>
+    <string name="meeting_rb_normal">标准</string>
+    <string name="meeting_rb_video_fast">流畅</string>
+    <string name="meeting_rb_video_hd">清晰</string>
+    <string name="meeting_rb_voice">语音</string>
+    <string name="meeting_tv_audio_quality">音质选择</string>
+    <string name="meeting_tv_video_quality">画质选择</string>
+    <string name="share">分享</string>
+    <style name="BaseFragmentDialogTheme" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="BaseTabFragmentTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="MeetingCreateRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/meetingItemTitleSize</item>
+    </style>
+    <style name="SpinnerPopTheme">
+        <item name="android:background">@drawable/bg_item_gradient</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="meeting_button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

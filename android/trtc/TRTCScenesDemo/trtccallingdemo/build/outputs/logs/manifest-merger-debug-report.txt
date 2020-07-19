@@ -1,0 +1,69 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:5:5-22:19
+activity#com.tencent.liteav.trtccalling.ui.TRTCCallingEntranceActivity
+ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:6:9-10:66
+	android:screenOrientation
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:9:13-49
+	android:launchMode
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:8:13-43
+	android:theme
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:10:13-63
+	android:name
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:7:13-89
+activity#com.tencent.liteav.trtccalling.ui.videocall.TRTCVideoCallActivity
+ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:11:9-15:66
+	android:screenOrientation
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:14:13-49
+	android:launchMode
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:13:13-43
+	android:theme
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:15:13-63
+	android:name
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:12:13-93
+activity#com.tencent.liteav.trtccalling.ui.audiocall.TRTCAudioCallActivity
+ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:16:9-20:66
+	android:screenOrientation
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:19:13-49
+	android:launchMode
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:18:13-43
+	android:theme
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:20:13-63
+	android:name
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml:17:13-63
+uses-sdk
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		ADDED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/cortxu/Downloads/LiteAVSDK_TRTC_Android_8.5.10028/TRTCScenesDemo/trtccallingdemo/src/main/AndroidManifest.xml
