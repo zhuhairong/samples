@@ -1,3 +1,5 @@
 apple/sqlite3Demo/sqlite3Demo.xcodeproj/project.xcworkspace/xcuserdata/cortxu.xcuserdatad/UserInterfaceState.xcuserstate
 apple/sqlite3Demo/sqlite3Demo.xcodeproj/project.xcworkspace/xcuserdata/cortxu.xcuserdatad/UserInterfaceState.xcuserstate
-android/FfmpegMediaCodec/.idea/
+.DS_Store
+.gradle
+.idea
