@@ -10,8 +10,7 @@
 #include <sstream>
 
 FFDecoder::FFDecoder(bool hardware, bool multithread)
-  : hardware_(hardware), multithread_(multithread), inited_(false), video_frame_idx_(0), audio_frame_idx_(0),
-    video_frame_sent_cnt_(0), video_frame_recv_cnt_(0), audio_frame_sent_cnt_(0), audio_frame_recv_cnt_(0), fp_audio_(NULL),
+  : hardware_(hardware), multithread_(multithread), inited_(false), video_frame_idx_(0), audio_frame_idx_(0), fp_audio_(NULL),
     format_context_(nullptr), audio_context_(nullptr), video_context_(nullptr),
     audio_stream_(nullptr), video_stream_(nullptr), audio_frame_(nullptr), video_frame_(nullptr) {
 }
@@ -30,6 +29,8 @@ bool FFDecoder::Init(const FFDecoderInfo& info) {
     if (!info.enable_video && !info.enable_audio) {
       break;
     }
+
+    stats_.start_stamp = GetTickCount();
 
     int ret = avformat_open_input(&format_context_, info.file_path.c_str(), nullptr, nullptr);
     if (ret < 0) {
@@ -80,7 +81,7 @@ bool FFDecoder::Init(const FFDecoderInfo& info) {
       if (!info.output_dir.empty()) {
         std::string audio_path = info.output_dir + "/output.pcm";
 
-        fp_audio_ = fopen(audio_path.c_str(), "wb");
+//        fp_audio_ = fopen(audio_path.c_str(), "wb");
         LOGI("%s %d fopen %s", __FUNCTION__, __LINE__, audio_path.c_str());
       }
 
@@ -251,13 +252,16 @@ bool FFDecoder::Flush() {
 }
 
 void FFDecoder::Uint() {
-  inited_ = false;
+  if (inited_) {
+    stats_.end_stamp = GetTickCount();
+
+    uint32_t spent = stats_.end_stamp - stats_.start_stamp;
+    LOGD("%s %d spent: %u audio: [s: %u r: %u] video: [s: %u r: %u]", __FUNCTION__, __LINE__,
+         spent, stats_.audio_sent_cnt, stats_.audio_recv_cnt, stats_.video_sent_cnt, stats_.video_recv_cnt);
+  }
+
   video_frame_idx_ = 0;
-  video_frame_sent_cnt_ = 0;
-  video_frame_recv_cnt_ = 0;
   audio_frame_idx_ = 0;
-  audio_frame_sent_cnt_ = 0;
-  audio_frame_recv_cnt_ = 0;
 
   if (audio_frame_) {
     av_frame_free(&audio_frame_);
@@ -296,6 +300,8 @@ void FFDecoder::Uint() {
     fclose(fp_audio_);
     fp_audio_ = NULL;
   }
+
+  inited_ = false;
 }
 
 bool FFDecoder::Decode(AVPacket* pkt, AVCodecContext* context, AVFrame* frame) {
@@ -310,8 +316,8 @@ bool FFDecoder::Decode(AVPacket* pkt, AVCodecContext* context, AVFrame* frame) {
 
   bool is_video = context->codec_type == AVMEDIA_TYPE_VIDEO;
   auto& frame_idx = is_video ? video_frame_idx_ : audio_frame_idx_;
-  auto& sent_cnt = is_video ? video_frame_sent_cnt_ : audio_frame_sent_cnt_;
-  auto& recv_cnt = is_video ? video_frame_recv_cnt_ : audio_frame_recv_cnt_;
+  auto& sent_cnt = is_video ? stats_.video_sent_cnt : stats_.audio_sent_cnt;
+  auto& recv_cnt = is_video ? stats_.video_recv_cnt : stats_.audio_recv_cnt;
   uint32_t count = 0;
 
   static uint32_t sent_count = 0;
@@ -354,12 +360,12 @@ bool FFDecoder::Decode(AVPacket* pkt, AVCodecContext* context, AVFrame* frame) {
          frame->width, frame->height, frame->channels, frame->sample_rate,
          frame->crop_left, frame->crop_top, frame->crop_bottom, frame->crop_bottom);
 
-    if (!is_video) {
-      if (fp_audio_) {
-        fwrite(frame->data[0], 1, frame_data_size, fp_audio_);
-      }
-      continue;
-    }
+//    if (!is_video) {
+//      if (fp_audio_) {
+//        fwrite(frame->data[0], 1, frame_data_size, fp_audio_);
+//      }
+//      continue;
+//    }
 
     uint64_t now = GetTickCount();
     decode_spent += (now - start_stamp);

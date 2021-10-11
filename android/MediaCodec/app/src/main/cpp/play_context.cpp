@@ -2,16 +2,16 @@
 // Created by cort xu on 2021/10/9.
 //
 
-#include "native_play.h"
+#include "play_context.h"
 
-NativePlay::NativePlay() : window_(nullptr), started_(false) {
+PlayContext::PlayContext() : window_(nullptr), started_(false) {
 }
 
-NativePlay::~NativePlay() {
+PlayContext::~PlayContext() {
   Stop();
 }
 
-bool NativePlay::Start(ANativeWindow* window, std::string file_path) {
+bool PlayContext::Start(JNIEnv* env, jstring jfilepath, jobject jsurface) {
   if (!started_) {
     return false;
   }
@@ -21,13 +21,13 @@ bool NativePlay::Start(ANativeWindow* window, std::string file_path) {
   return true;
 }
 
-void NativePlay::Update() {
+void PlayContext::Update() {
   if (!started_) {
     return;
   }
 }
 
-void NativePlay::Stop() {
+void PlayContext::Stop() {
   if (window_) {
     ANativeWindow_release(window_);
     window_ = nullptr;

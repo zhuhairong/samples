@@ -102,7 +102,6 @@ void NativeSdk::TestFFEncode(std::string file_path) {
 }
 
 void NativeSdk::TestFFDecode(std::string file_path, std::string output_dir) {
-  uint64_t start_stamp = GetTickCount();
   FFDecoder decoder(enable_hardware_, enable_multithread_);
 
   do {
@@ -123,12 +122,6 @@ void NativeSdk::TestFFDecode(std::string file_path, std::string output_dir) {
     }
     decoder.Flush();
   } while (false);
-
-  uint64_t end_stamp = GetTickCount();
-  uint64_t spent = end_stamp - start_stamp;
-  LOGD("%s %d spent: %llu sent: %u recv: %u avg: %u",
-       __FUNCTION__, __LINE__, spent, decoder.video_frame_sent_cnt(), decoder.video_frame_recv_cnt(),
-       spent / decoder.video_frame_recv_cnt());
 
   decoder.Uint();
 }

@@ -20,6 +20,15 @@ struct FFDecoderInfo {
     bool          enable_audio;
 };
 
+struct FFDecoderStats {
+    uint32_t start_stamp = 0;
+    uint32_t end_stamp = 0;
+    uint32_t audio_sent_cnt = 0;
+    uint32_t video_sent_cnt = 0;
+    uint32_t audio_recv_cnt = 0;
+    uint32_t video_recv_cnt = 0;
+};
+
 class FFDecoder {
 public:
   FFDecoder(bool hardware, bool multithread);
@@ -32,12 +41,6 @@ public:
   bool Flush();
   void Uint();
 
-public:
-  uint32_t video_frame_sent_cnt() const { return video_frame_sent_cnt_; }
-  uint32_t video_frame_recv_cnt() const { return video_frame_recv_cnt_; }
-  uint32_t audio_frame_sent_cnt() const { return audio_frame_sent_cnt_; }
-  uint32_t audio_frame_recv_cnt() const { return audio_frame_recv_cnt_; }
-
 private:
   bool Decode(AVPacket* pkt, AVCodecContext* context, AVFrame* frame);
 
@@ -47,11 +50,8 @@ private:
   std::atomic_bool              inited_;
   uint32_t                      video_frame_idx_;
   uint32_t                      audio_frame_idx_;
-  uint32_t                      video_frame_sent_cnt_;
-  uint32_t                      video_frame_recv_cnt_;
-  uint32_t                      audio_frame_sent_cnt_;
-  uint32_t                      audio_frame_recv_cnt_;
   FILE*                         fp_audio_;
+  FFDecoderStats                stats_;
   AVFormatContext*              format_context_;
   AVCodecContext*               audio_context_;
   AVCodecContext*               video_context_;

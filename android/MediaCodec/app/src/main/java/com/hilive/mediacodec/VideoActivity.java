@@ -16,6 +16,7 @@ import java.net.URISyntaxException;
 
 public class VideoActivity extends AppCompatActivity implements SurfaceHolder.Callback {
     private final static String TAG = "[hilive][video]";
+    private long mContext = 0;
     private Surface mSurface = null;
 
     @Override
@@ -31,6 +32,14 @@ public class VideoActivity extends AppCompatActivity implements SurfaceHolder.Ca
 
         Button btStop = findViewById(R.id.btStop);
         btStop.setOnClickListener(mClickListener);
+
+        mContext = NativeSdk.getInstance().PlayInit();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        NativeSdk.getInstance().PlayUint(mContext);
     }
 
     @Override
@@ -58,7 +67,7 @@ public class VideoActivity extends AppCompatActivity implements SurfaceHolder.Ca
                     pickFile(v.getId());
                     break;
                 case R.id.btStop:
-                    NativeSdk.getInstance().playStop();
+                    NativeSdk.getInstance().PlayStop(mContext);
                     break;
                 default:break;
             }
@@ -86,7 +95,7 @@ public class VideoActivity extends AppCompatActivity implements SurfaceHolder.Ca
             Log.i(TAG, "onActivityResult, code: " + code + " path: " + uri.getPath() + " host: " + uri.getHost() + " encodedPath: " + uri.getEncodedPath() +
                     " isAbsolute: " + uri.isAbsolute() + " isRelative: " + uri.isRelative());
 
-            NativeSdk.getInstance().playStart(filePath, mSurface);
+            NativeSdk.getInstance().PlayStart(mContext, filePath, mSurface);
         } catch (URISyntaxException e) {
             Log.e(TAG, "URISyntaxException: " + e.getMessage());
             e.printStackTrace();

@@ -2,7 +2,7 @@
 #include <string>
 #include <unistd.h>
 #include <android/log.h>
-#include "native_sdk.h"
+#include "play_context.h"
 #include "media/utils.h"
 
 
@@ -44,20 +44,20 @@ JNIEXPORT void JNI_OnUnload(JavaVM* vm, void* reserved) {
 
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_com_hilive_mediacodec_NativeSdk_nativeInit(
+Java_com_hilive_mediacodec_NativeSdk_PlayInit(
         JNIEnv* env,
         jobject /* this */) {
-    return reinterpret_cast<uint64_t>(new NativeSdk());
+    return reinterpret_cast<uint64_t>(new PlayContext());
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_hilive_mediacodec_NativeSdk_nativePlayStart(
+Java_com_hilive_mediacodec_NativeSdk_PlayStart(
         JNIEnv* env,
         jobject /* this */,
         jlong jctx,
         jstring jfilepath,
         jobject jsurface) {
-    NativeSdk* sdk = reinterpret_cast<NativeSdk*>(jctx);
+    PlayContext* sdk = reinterpret_cast<PlayContext*>(jctx);
     if (!sdk) {
         return false;
     }
@@ -65,42 +65,42 @@ Java_com_hilive_mediacodec_NativeSdk_nativePlayStart(
     std::string file_path;
     JNIHelper::Jstring2Str(env, jfilepath, file_path);
 
-    sdk->PlayStart(ANativeWindow_fromSurface(env, jsurface), file_path);
+    sdk->Start(env, jfilepath, jsurface);
     return true;
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_hilive_mediacodec_NativeSdk_nativePlayUpdate(
+Java_com_hilive_mediacodec_NativeSdk_PlayUpdate(
         JNIEnv* env,
         jobject /* this */,
         jlong jctx) {
-    NativeSdk* sdk = reinterpret_cast<NativeSdk*>(jctx);
+    PlayContext* sdk = reinterpret_cast<PlayContext*>(jctx);
     if (!sdk) {
         return;
     }
 
-    sdk->PlayUpdate();
+    sdk->Update();
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_hilive_mediacodec_NativeSdk_nativePlayStop(
+Java_com_hilive_mediacodec_NativeSdk_PlayStop(
         JNIEnv* env,
         jobject /* this */,
         jlong jctx) {
-    NativeSdk* sdk = reinterpret_cast<NativeSdk*>(jctx);
+    PlayContext* sdk = reinterpret_cast<PlayContext*>(jctx);
     if (!sdk) {
         return;
     }
 
-    sdk->PlayStop();
+    sdk->Stop();
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_hilive_mediacodec_NativeSdk_nativeUint(
+Java_com_hilive_mediacodec_NativeSdk_PlayUint(
         JNIEnv* env,
         jobject /* this */,
         jlong jctx) {
-    NativeSdk* sdk = reinterpret_cast<NativeSdk*>(jctx);
+    PlayContext* sdk = reinterpret_cast<PlayContext*>(jctx);
     if (!sdk) {
         return;
     }

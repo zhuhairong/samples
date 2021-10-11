@@ -56,7 +56,7 @@ struct HwEncodeParameter {
   int         samplerate = 0;
 };
 
-inline unsigned int GetTickCount() {
+inline uint32_t GetTickCount() {
   struct timespec on = {0, 0};
   if (clock_gettime(CLOCK_MONOTONIC, &on) != 0) {
     return 0;

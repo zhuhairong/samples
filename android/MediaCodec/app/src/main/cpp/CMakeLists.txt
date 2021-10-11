@@ -25,9 +25,8 @@ add_library( # Sets the name of the library.
              # Provides a relative path to your source file(s).
              media/ff_decoder.cpp
              media/ff_encoder.cpp
-             native_play.cpp
-             native_sdk.cpp
-             jni_helper.cpp
+        play_context.cpp
+        jni_helper.cpp
              native-lib.cpp )
 
 # Searches for a specified prebuilt library and stores the path as a
